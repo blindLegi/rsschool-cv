@@ -73,3 +73,9 @@ const check = () => {
 * Belarusion National Technical University. Foundary production of ferrous and non-ferrous metals. Bachelor's degree.
 * [Marathon 5 days 5 JavaScript projects.](https://vladilen.ru/marathon)
 * [RSSchool JS/FE Pre-School 2022](https://app.rs.school/certificate/3497uctb)
+
+---
+### Languages:
+* Russian: Native
+* Belarusian: Upper-Intermediate
+* English: Upper-Intermediate ([C2 according to EF Standart English Test](https://www.efset.org/cert/bbeJ7q) but I had little conversational experience)
