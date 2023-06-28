@@ -17,3 +17,44 @@ Already tried to study on this course, this time the main goal is to make it all
 * HTML
 * CSS
 * JavaScript
+
+---
+### Code example:
+```
+area.addEventListener('click', e => {
+    if (e.target.className === 'box') {
+        move % 2 === 0 ? e.target.innerHTML = xMark : e.target.innerHTML = oMark;
+        move++;
+        e.target.classList.add('active');
+        check();
+    }
+})
+
+const check = () => {
+    const arr = [
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
+    ];
+    
+
+    for(i = 0; i < arr.length; i++) {
+        if (boxes[arr[i][0]].innerHTML == xMark && boxes[arr[i][1]].innerHTML == xMark && boxes[arr[i][2]].innerHTML == xMark) {
+            result = 'Xs';
+            prepareResult1(result);
+        } else if (boxes[arr[i][0]].innerHTML == oMark && boxes[arr[i][1]].innerHTML == oMark && boxes[arr[i][2]].innerHTML == oMark) {
+            result = 'Os';
+            prepareResult2(result);
+        } 
+    }
+    if (move == 9 && result === undefined) {
+        result = 'Draw';
+        prepareResult3(result);
+    }
+}
+```
