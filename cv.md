@@ -67,3 +67,9 @@ const check = () => {
 * [Mini-game](https://jsfiddle.net/blindLegi/9ypq40ne/3/)
 * [Aim game](https://jsfiddle.net/blindLegi/y8n4hajf/1/)
 * [Tic-tac-toe](https://rolling-scopes-school.github.io/blindlegi-JSFEPRESCHOOL/tic-tac-toe/)
+
+---
+### Education:
+* Belarusion National Technical University. Foundary production of ferrous and non-ferrous metals. Bachelor's degree.
+* [Marathon 5 days 5 JavaScript projects.](https://vladilen.ru/marathon)
+* [RSSchool JS/FE Pre-School 2022](https://app.rs.school/certificate/3497uctb)
