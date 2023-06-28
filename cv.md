@@ -58,3 +58,12 @@ const check = () => {
     }
 }
 ```
+
+---
+### Experience:
+* [Drop-down Cards Plugin](https://jsfiddle.net/blindLegi/z9a0kop2/3/)
+* [Drag and Drop](https://jsfiddle.net/blindLegi/g8apswvu/2/)
+* [Slider](https://jsfiddle.net/blindLegi/2Lk51csx/1/)
+* [Mini-game](https://jsfiddle.net/blindLegi/9ypq40ne/3/)
+* [Aim game](https://jsfiddle.net/blindLegi/y8n4hajf/1/)
+* [Tic-tac-toe](https://rolling-scopes-school.github.io/blindlegi-JSFEPRESCHOOL/tic-tac-toe/)
