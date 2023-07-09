@@ -66,39 +66,61 @@
             <div class="main-section">
                 <section class="section about-section" id="about">
                     <h2 class="section-title">About me</h2>
-                    <p class="text">Hello from Minsk! I have lived here since I went to university. I graduated from Belarusion National Technical University with a bachelor's degree in foundary production of ferrous and non-ferrous metals. In the last years of my studies, I got a part-time job as a courier driver. After that I was taken into military service for a year. The time I spent there...was fun! It was there that i began to think about moving into IT. I decided to try Frontend and found rs school. </p>
+                    <p class="text">Already tried to study on this course, this time the main goal is to make it all the way to stage#3 and finish it. Fast learner, diligent, patient, calm. Ready to work hard on myself, learn new technologies and continue to improve hard and soft skills. </p>
                 </section>
                 <section class="section education-section" id="education">
                     <h2 class="section-title">Education</h2>
                     <ul class="list">
                         <li class="text">Belarusion National Technical University. Foundary production of ferrous and non-ferrous metals. Bachelor's degree.</li>
-                        <li><a class="link" href="https://vladilen.ru/marathon">Marathon 5 days 5 JavaScript projects.</a></li>
+                        <li><a class="link" href="https://result.school/products/marathon-js">Marathon 5 days 5 JavaScript projects.</a></li>
                     </ul>
                 </section>
                 <section class="section code-section" id="code">
                     <h2 class="section-title">Code example</h2>
                     <pre class="code">
                         <code>
- const slides = document.querySelectorAll('.slide')
+area.addEventListener('click', e => {
+    if (e.target.className === 'box') {
+        move % 2 === 0 ? e.target.innerHTML = xMark : e.target.innerHTML = oMark;
+        move++;
+        e.target.classList.add('active');
+        check();
+    }
+})
 
- for (const slide of slides) {
-   slide.addEventListener('click', ()=> {
-   clearActiveClasses() 
-   slide.classList.add('active')
-   })
- }
- 
- function clearActiveClasses() {
-   slides.forEach((slide) => {
-   slide.classList.remove('active')
-   })
- }
+const check = () => {
+    const arr = [
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
+    ];
+    
+
+    for(i = 0; i < arr.length; i++) {
+        if (boxes[arr[i][0]].innerHTML == xMark && boxes[arr[i][1]].innerHTML == xMark && boxes[arr[i][2]].innerHTML == xMark) {
+            result = 'Xs';
+            prepareResult1(result);
+        } else if (boxes[arr[i][0]].innerHTML == oMark && boxes[arr[i][1]].innerHTML == oMark && boxes[arr[i][2]].innerHTML == oMark) {
+            result = 'Os';
+            prepareResult2(result);
+            } 
+        }
+        if (move == 9 && result === undefined) {
+            result = 'Draw';
+            prepareResult3(result);
+    }
+}
                         </code>
                     </pre>
                 </section>
                 <section class="section english-section" id="english">
                     <h2 class="section-title">English</h2>
-                    <p class="text"><a class="link" href="https://www.efset.org/cert/bbeJ7q">C2 according to EF Standart English Test</a> but I have little "speaking" experience, so it will obviously be less</p>
+                    <p class="text"><a class="link" href="https://www.efset.org/cert/YzoZFf">C2 according to EF Standart English Test</a> but I have little "speaking" experience, so it will obviously be less</p>
                 </section>
             </div>
 
