@@ -78,44 +78,7 @@
                 <section class="section code-section" id="code">
                     <h2 class="section-title">Code example</h2>
                     <pre class="code">
-                        <code>
-area.addEventListener('click', e => {
-    if (e.target.className === 'box') {
-        move % 2 === 0 ? e.target.innerHTML = xMark : e.target.innerHTML = oMark;
-        move++;
-        e.target.classList.add('active');
-        check();
-    }
-})
-
-const check = () => {
-    const arr = [
-        [0,1,2],
-        [3,4,5],
-        [6,7,8],
-        [0,3,6],
-        [1,4,7],
-        [2,5,8],
-        [0,4,8],
-        [2,4,6]
-    ];
-    
-
-    for(i = 0; i < arr.length; i++) {
-        if (boxes[arr[i][0]].innerHTML == xMark && boxes[arr[i][1]].innerHTML == xMark && boxes[arr[i][2]].innerHTML == xMark) {
-            result = 'Xs';
-            prepareResult1(result);
-        } else if (boxes[arr[i][0]].innerHTML == oMark && boxes[arr[i][1]].innerHTML == oMark && boxes[arr[i][2]].innerHTML == oMark) {
-            result = 'Os';
-            prepareResult2(result);
-            } 
-        }
-        if (move == 9 && result === undefined) {
-            result = 'Draw';
-            prepareResult3(result);
-    }
-}
-                        </code>
+                        <code>Hello, World!</code>
                     </pre>
                 </section>
                 <section class="section english-section" id="english">
